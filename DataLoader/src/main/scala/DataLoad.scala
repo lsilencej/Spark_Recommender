@@ -13,14 +13,17 @@ import org.apache.spark.sql.{DataFrame, SparkSession}
 
 case class Product(productId: Int, name: String, imageUrl: String, categories: String)
 case class Rating(userId: Int, productId: Int, score: Double, timestamp: Int)
+case class User(userId: Int, username: String, password: String)
 
 case class MongoConfig(uri: String, db: String)
 
 object DataLoad {
     val PRODUCT_DATA_PATH: String = Thread.currentThread().getContextClassLoader.getResource("products.txt").getPath
     val RATING_DATA_PATH: String = Thread.currentThread().getContextClassLoader.getResource("ratings.txt").getPath
+    val USER_DATA_PATH: String = Thread.currentThread().getContextClassLoader.getResource("users.txt").getPath
     val PRODUCT_COLLECTION: String = "Product"
     val RATING_COLLECTION: String = "Rating"
+    val USER_COLLECTION = "User"
 
     def main(args: Array[String]): Unit = {
         val config = Map(
@@ -45,19 +48,28 @@ object DataLoad {
             Rating(temp(0).toInt, temp(1).toInt, temp(2).toDouble, temp(3).toInt)
         }).toDF()
 
+        val userRDD = spark.sparkContext.textFile(USER_DATA_PATH)
+        val userDF = userRDD.map(item => {
+            val temp = item.split(" ")
+            User(temp(0).toInt, temp(1).trim, temp(2).trim)
+        }).toDF()
+
 
         val mongoConfig: MongoConfig = MongoConfig(config("mongo.uri"), config("mongo.db"))
-        storeDataInMongoDB(productDF, ratingDF)(mongoConfig)
+        saveInMongoDB(productDF, ratingDF, userDF)(mongoConfig)
 
         spark.stop()
     }
 
-    def storeDataInMongoDB(productDF: DataFrame, ratingDF: DataFrame)(mongoConfig: MongoConfig): Unit = {
+    def saveInMongoDB(productDF: DataFrame, ratingDF: DataFrame, userDF: DataFrame)(mongoConfig: MongoConfig): Unit = {
         val mongoClient = MongoClient(MongoClientURI(mongoConfig.uri))
         val productCollection = mongoClient(mongoConfig.db)(PRODUCT_COLLECTION)
         val ratingCollection = mongoClient(mongoConfig.db)(RATING_COLLECTION)
+        val userCollection = mongoClient(mongoConfig.db)(USER_COLLECTION)
         productCollection.dropCollection()
         ratingCollection.dropCollection()
+        userCollection.dropCollection()
+
 
         productDF.write
             .option("uri", mongoConfig.uri)
@@ -73,9 +85,18 @@ object DataLoad {
             .format("com.mongodb.spark.sql")
             .save()
 
+        userDF.write
+            .option("uri", mongoConfig.uri)
+            .option("collection", USER_COLLECTION)
+            .mode("overwrite")
+            .format("com.mongodb.spark.sql")
+            .save()
+
+
         productCollection.createIndex(MongoDBObject("productId" -> 1))
         ratingCollection.createIndex(MongoDBObject("productId" -> 1))
         ratingCollection.createIndex(MongoDBObject("userId" -> 1))
+        userCollection.createIndex(MongoDBObject("userId" -> 1))
 
         mongoClient.close()
     }

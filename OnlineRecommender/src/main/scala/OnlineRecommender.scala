@@ -109,7 +109,7 @@ object OnlineRecommender {
 
         ssc.start()
 
-        println("streaming start")
+        println("-------------------------streaming start-------------------------------")
 
         ssc.awaitTermination()
     }

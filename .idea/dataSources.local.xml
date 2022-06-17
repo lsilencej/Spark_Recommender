@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="IU-221.5787.30">
+    <data-source name="recommender@localhost" uuid="06f39004-d32f-441c-924d-6e1087addda8">
+      <database-info product="Mongo DB" version="5.0.9" jdbc-version="4.2" driver-name="MongoDB JDBC Driver" driver-version="1.15" dbms="MONGO" exact-version="5.0.9" exact-driver-version="1.15" />
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>lsilencej</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema" qname="recommender" />
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+  </component>
+</project>

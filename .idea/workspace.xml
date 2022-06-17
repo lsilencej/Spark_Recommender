@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e0a3ae38-a8ea-4a26-ae66-cb4707d55b53" name="Changes" comment="添加 OnlineUserRecommender">
+      <change afterPath="$PROJECT_DIR$/DataLoader/src/main/resources/users.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLoader/src/main/scala/DataLoad.scala" beforeDir="false" afterPath="$PROJECT_DIR$/DataLoader/src/main/scala/DataLoad.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLoader/target/classes/DataLoad$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataLoader/target/classes/DataLoad$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLoader/target/classes/DataLoad$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataLoader/target/classes/DataLoad$$anonfun$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLoader/target/classes/DataLoad$$typecreator13$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataLoader/target/classes/DataLoad$$typecreator13$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLoader/target/classes/DataLoad$$typecreator5$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataLoader/target/classes/DataLoad$$typecreator5$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLoader/target/classes/DataLoad$.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataLoader/target/classes/DataLoad$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLoader/target/classes/DataLoad.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataLoader/target/classes/DataLoad.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLoader/target/classes/MongoConfig$.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataLoader/target/classes/MongoConfig$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLoader/target/classes/MongoConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataLoader/target/classes/MongoConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineRecommender/src/main/scala/OnlineRecommender.scala" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineRecommender/src/main/scala/OnlineRecommender.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineRecommender/target/classes/OnlineRecommender$.class" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineRecommender/target/classes/OnlineRecommender$.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Scala Worksheet" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2AK5YKJgkAmrFgoKjUYAmnATdWT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "corretto-1.8",
+    "last_opened_file_path": "C:/Users/23100/Desktop/Recommender/DataLoader/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mongo"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\23100\Desktop\Recommender\DataLoader\src\main\resources" />
+      <recent name="C:\Users\23100\Desktop\Recommend\DataLoader\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.OnlineRecommender">
+    <configuration name="ALSTrainer" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="ALSTrainer" />
+      <module name="OfflineRecommender" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataLoad" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="DataLoad" />
+      <module name="DataLoader" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OfflineRecommender" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="OfflineRecommender" />
+      <module name="OfflineRecommender" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OnlineRecommender" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="OnlineRecommender" />
+      <module name="OnlineRecommender" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StaticRecommender" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="StaticRecommender" />
+      <module name="StaticRecommender" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.OnlineRecommender" />
+        <item itemvalue="Application.OfflineRecommender" />
+        <item itemvalue="Application.ALSTrainer" />
+        <item itemvalue="Application.StaticRecommender" />
+        <item itemvalue="Application.DataLoad" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e0a3ae38-a8ea-4a26-ae66-cb4707d55b53" name="Changes" comment="" />
+      <created>1654745485294</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1654745485294</updated>
+      <workItem from="1654745486729" duration="10000000" />
+      <workItem from="1654847086568" duration="751000" />
+      <workItem from="1654848349883" duration="775000" />
+      <workItem from="1654850389785" duration="1941000" />
+      <workItem from="1655196412941" duration="2611000" />
+      <workItem from="1655219677843" duration="3797000" />
+      <workItem from="1655256396379" duration="7311000" />
+      <workItem from="1655266882676" duration="4569000" />
+      <workItem from="1655271632950" duration="35000" />
+      <workItem from="1655271681841" duration="79000" />
+      <workItem from="1655271777829" duration="4717000" />
+      <workItem from="1655278992204" duration="9273000" />
+      <workItem from="1655298163654" duration="6164000" />
+      <workItem from="1655340338790" duration="23252000" />
+      <workItem from="1655433382186" duration="9832000" />
+    </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1655385999252</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1655385999252</updated>
+    </task>
+    <task id="LOCAL-00002" summary="添加 OnlineUserRecommender">
+      <created>1655451909951</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655451909951</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <MESSAGE value="添加 OnlineUserRecommender" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加 OnlineUserRecommender" />
+  </component>
+</project>
