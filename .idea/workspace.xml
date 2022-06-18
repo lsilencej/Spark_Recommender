@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0a3ae38-a8ea-4a26-ae66-cb4707d55b53" name="Changes" comment="添加 OnlineUserRecommender">
-      <change afterPath="$PROJECT_DIR$/DataLoader/src/main/resources/users.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLoader/src/main/scala/DataLoad.scala" beforeDir="false" afterPath="$PROJECT_DIR$/DataLoader/src/main/scala/DataLoad.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLoader/target/classes/DataLoad$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataLoader/target/classes/DataLoad$$anonfun$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLoader/target/classes/DataLoad$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataLoader/target/classes/DataLoad$$anonfun$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLoader/target/classes/DataLoad$$typecreator13$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataLoader/target/classes/DataLoad$$typecreator13$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLoader/target/classes/DataLoad$$typecreator5$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataLoader/target/classes/DataLoad$$typecreator5$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLoader/target/classes/DataLoad$.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataLoader/target/classes/DataLoad$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLoader/target/classes/DataLoad.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataLoader/target/classes/DataLoad.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLoader/target/classes/MongoConfig$.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataLoader/target/classes/MongoConfig$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLoader/target/classes/MongoConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataLoader/target/classes/MongoConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OnlineRecommender/src/main/scala/OnlineRecommender.scala" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineRecommender/src/main/scala/OnlineRecommender.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OnlineRecommender/target/classes/OnlineRecommender$.class" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineRecommender/target/classes/OnlineRecommender$.class" afterDir="false" />
+    <list default="true" id="e0a3ae38-a8ea-4a26-ae66-cb4707d55b53" name="Changes" comment="添加 User 表的创建">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +134,7 @@
       <workItem from="1655278992204" duration="9273000" />
       <workItem from="1655298163654" duration="6164000" />
       <workItem from="1655340338790" duration="23252000" />
-      <workItem from="1655433382186" duration="9832000" />
+      <workItem from="1655433382186" duration="10505000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1655385999252</created>
@@ -162,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655451909951</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加 User 表的创建">
+      <created>1655453926975</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655453926975</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +177,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="添加 OnlineUserRecommender" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加 OnlineUserRecommender" />
+    <MESSAGE value="添加 User 表的创建" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加 User 表的创建" />
   </component>
 </project>
